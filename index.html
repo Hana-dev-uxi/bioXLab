@@ -175,6 +175,15 @@
     flex-shrink: 0;
   }
   .nav-actions { display: flex; gap: 8px; align-items: center; margin-left: auto; }
+  .nav-pdf {
+  flex: 1;
+  max-width: 100px;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: relative; 
+  color: white;
+  cursor: pointer;
+  }
   .nav-btn {
     background: var(--bg-2);
     border: 1px solid var(--border);
@@ -1061,7 +1070,7 @@
     <input type="text" id="global-search" placeholder="Search anything — Neuron, ATP, CRISPR, Cancer..." autocomplete="off">
     <div id="autocomplete"></div>
   </div>
-
+<div class="nav-pdf" onclick="window.open('HIV_Research.pdf', '_blank')">HIV RESEARCH by creator</div>
   <div class="nav-actions"></div>
 </nav>
 
